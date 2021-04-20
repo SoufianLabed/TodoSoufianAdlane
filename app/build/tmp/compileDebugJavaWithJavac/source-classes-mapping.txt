@@ -1,0 +1,2 @@
+com/soufian/todosoufianlabed/BuildConfig.java
+ com.soufian.todosoufianlabed.BuildConfig
