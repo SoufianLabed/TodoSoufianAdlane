@@ -8,12 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import coil.transform.CircleCropTransformation
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.soufian.todosoufianlabed.R
 import com.soufian.todosoufianlabed.TaskListViewModel
@@ -21,6 +24,7 @@ import com.soufian.todosoufianlabed.network.Api
 import com.soufian.todosoufianlabed.network.TasksRepository
 import com.soufian.todosoufianlabed.task.TaskActivity
 import com.soufian.todosoufianlabed.task.TaskActivity.Companion.ADD_TASK_REQUEST_CODE
+import com.soufian.todosoufianlabed.userinfo.UserInfoActivity
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -28,6 +32,8 @@ class TaskListFragment : Fragment() {
 
 
     val adapter = TaskListAdapter()
+
+
 
     private val tasksRepository = TasksRepository()
     private val viewModel: TaskListViewModel by viewModels()
@@ -108,6 +114,9 @@ class TaskListFragment : Fragment() {
             adapter.notifyDataSetChanged()
         }
 
+        val image_view = view?.findViewById(R.id.imageV) as ImageView
+
+
 
 
     }
@@ -151,6 +160,33 @@ class TaskListFragment : Fragment() {
             val apiText  =  view?.findViewById(R.id.apiTextV) as TextView
             apiText.text = "${userInfo.firstName} ${userInfo.lastName}"
         }
+        val image_view = view?.findViewById(R.id.imageV) as ImageView
+        lifecycleScope.launch {
+
+            val userInfo = Api.userService.getInfo().body()!!
+
+            image_view.load(userInfo.avatar)
+        }
+
+        /*
+        image_view.load("https://goo.gl/gEgYUd"){
+            transformations(CircleCropTransformation())
+        }*/
+
+
+       /* image_view.setOnClickListener {
+            val intent = Intent(activity,  UserInfoActivity::class.java)
+        }
+*/
+
+
+        image_view.setOnClickListener({
+
+            val intent = Intent(activity, UserInfoActivity::class.java)
+            startActivityForResult(intent, ADD_TASK_REQUEST_CODE)
+
+        })
+
 
         viewModel.loadTasks()
 

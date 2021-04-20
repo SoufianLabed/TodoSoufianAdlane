@@ -1866,6 +1866,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id coil_request_manager
 id collapseActionView
 id confirm_button
 id container
@@ -1952,6 +1953,8 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
+id imageV
+id image_view
 id info
 id invisible
 id inward
@@ -2132,6 +2135,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id take_picture_button
 id task_description
 id task_description2
 id task_title
@@ -2176,6 +2180,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id upload_image_button
 id useLogo
 id view_offset_helper
 id view_tree_lifecycle_owner
@@ -2249,6 +2254,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_userinfo
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
