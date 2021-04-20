@@ -1,9 +1,20 @@
 -- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:29:9-37:20
+	android:grantUriPermissions
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:33:13-47
+	android:authorities
+		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:31:13-64
+	android:exported
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:30:13-62
 manifest
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [androidx.preference:preference-ktx:1.1.1] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\7a622e269d1c2f110348c2e18afde930\jetified-preference-ktx-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.3.2] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\1531fb1c51a1290ae65df4d104a08625\jetified-fragment-ktx-1.3.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-ktx:1.3.0-alpha06] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\1889a6f5fcd606974441b2764636e617\jetified-activity-ktx-1.3.0-alpha06\AndroidManifest.xml:17:1-24:12
@@ -54,22 +65,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\sosol\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\7e137eeb45a71a6dc4c4288c51dfa86f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\3fa017593e49f4b71cca3dea4b315356\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\380000889ca214510e444c2aff0b07c0\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:4:5-43
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:2:11-69
@@ -82,7 +93,7 @@ ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifes
 	android:name
 		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:6:22-62
 application
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:9:5-27:19
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:12:5-40:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\dca81d2e59f2ef6e5c4e3386a5e41173\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\dca81d2e59f2ef6e5c4e3386a5e41173\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\a23fc5979b453bb5d9de952a2a79084d\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -98,39 +109,39 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\so
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\68600a5be4367d49d50b69b04e4caf8f\core-1.3.2\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:18:9-54
 activity#com.soufian.todosoufianlabed.MainActivity
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:16:9-22:20
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:16:19-47
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:19:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:23:27-74
 activity#com.soufian.todosoufianlabed.task.TaskActivity
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:23:9-54
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:26:9-54
 	android:name
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:23:19-52
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:26:19-52
 activity#com.soufian.todosoufianlabed.userinfo.UserInfoActivity
-ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:24:9-62
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:27:9-62
 	android:name
-		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:24:19-60
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:27:19-60
 uses-sdk
 INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
@@ -245,6 +256,12 @@ INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidMani
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:34:13-36:54
+	android:resource
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:36:17-51
+	android:name
+		ADDED from C:\Users\sosol\StudioProjects\ToDoSoufian\app\src\main\AndroidManifest.xml:35:17-67
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\sosol\.gradle\caches\transforms-2\files-2.1\976d240aa59cda374cf775f635d1e248\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 	android:authorities

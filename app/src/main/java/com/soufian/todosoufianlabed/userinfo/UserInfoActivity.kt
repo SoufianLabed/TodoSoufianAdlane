@@ -7,10 +7,12 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.result.launch
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.content.FileProvider
 import androidx.core.net.toUri
 import com.soufian.todosoufianlabed.R
 import com.soufian.todosoufianlabed.network.Api
@@ -20,6 +22,7 @@ import java.io.File
 import java.util.*
 import java.util.jar.Manifest
 import androidx.lifecycle.lifecycleScope
+import com.soufian.todosoufianlabed.BuildConfig
 import kotlinx.coroutines.launch
 
 class UserInfoActivity : AppCompatActivity() {
@@ -37,7 +40,6 @@ class UserInfoActivity : AppCompatActivity() {
 
 
     }
-
 
 
 
@@ -70,6 +72,7 @@ class UserInfoActivity : AppCompatActivity() {
         }
     }
 
+/*
     private val takePicture = registerForActivityResult(ActivityResultContracts.TakePicturePreview()) { bitmap ->
         val tmpFile = File.createTempFile("avatar", "jpeg")
         tmpFile.outputStream().use {
@@ -77,24 +80,41 @@ class UserInfoActivity : AppCompatActivity() {
         }
         handleImage(tmpFile.toUri())
     }
+*/
 
-    private fun convert(uri: Uri) =
-            MultipartBody.Part.createFormData(
-                    name = "avatar",
-                    filename = "temp.jpeg",
-                    body = contentResolver.openInputStream(uri)!!.readBytes().toRequestBody()
-            )
 
-    private fun handleImage(uri: Uri) {
-        lifecycleScope.launch{
-            val userService = Api.userService.updateAvatar(convert(uri))
+
+        private fun convert(uri: Uri) =
+                MultipartBody.Part.createFormData(
+                        name = "avatar",
+                        filename = "temp.jpeg",
+                        body = contentResolver.openInputStream(uri)!!.readBytes().toRequestBody()
+                )
+
+        private fun handleImage(uri: Uri) {
+            lifecycleScope.launch {
+                val userService = Api.userService.updateAvatar(convert(uri))
+            }
+
+
         }
 
+    private val photoUri by lazy {
+        FileProvider.getUriForFile(
+                this,
+                BuildConfig.APPLICATION_ID +".fileprovider",
+                File.createTempFile("avatar", ".jpeg", externalCacheDir)
 
+        )
+    }
 
+    private val takePicture = registerForActivityResult(ActivityResultContracts.TakePicture()) { success ->
+        if (success) handleImage(photoUri)
+        else Toast.makeText(this, "Erreur ! 😢", Toast.LENGTH_LONG).show()
     }
 
     // use
-    private fun openCamera() = takePicture.launch()
+    private fun openCamera() = takePicture.launch(photoUri)
+
 
 }
