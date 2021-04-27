@@ -25,6 +25,7 @@ import com.soufian.todosoufianlabed.network.TasksRepository
 import com.soufian.todosoufianlabed.task.TaskActivity
 import com.soufian.todosoufianlabed.task.TaskActivity.Companion.ADD_TASK_REQUEST_CODE
 import com.soufian.todosoufianlabed.userinfo.UserInfoActivity
+import com.soufian.todosoufianlabed.userinfo.UserInfoViewModel
 import kotlinx.coroutines.launch
 import java.util.*
 
@@ -35,8 +36,9 @@ class TaskListFragment : Fragment() {
 
 
 
-    private val tasksRepository = TasksRepository()
+
     private val viewModel: TaskListViewModel by viewModels()
+
 
 
 
@@ -70,6 +72,8 @@ class TaskListFragment : Fragment() {
 
 
         }
+
+
 
 
 
@@ -136,8 +140,6 @@ class TaskListFragment : Fragment() {
 
                     viewModel.editTask(task)
 
-
-
             }
 
             Log.d("size", adapter.currentList.size.toString())
@@ -145,9 +147,6 @@ class TaskListFragment : Fragment() {
 
 
         }
-
-
-
 
     }
 
@@ -161,11 +160,13 @@ class TaskListFragment : Fragment() {
             apiText.text = "${userInfo.firstName} ${userInfo.lastName}"
         }
         val image_view = view?.findViewById(R.id.imageV) as ImageView
+
         lifecycleScope.launch {
 
             val userInfo = Api.userService.getInfo().body()!!
+            Log.d("test",userInfo.avatar.toString())
+            image_view.load(userInfo.avatar.toString())
 
-            image_view.load(userInfo.avatar)
         }
 
         /*

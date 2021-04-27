@@ -1,4 +1,4 @@
-#Tue Apr 20 16:22:43 CEST 2021
+#Tue Apr 27 14:08:21 CEST 2021
 base.0=C\:\\Users\\sosol\\StudioProjects\\ToDoSoufian\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

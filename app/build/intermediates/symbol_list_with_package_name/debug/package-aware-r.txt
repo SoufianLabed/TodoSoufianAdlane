@@ -1908,8 +1908,10 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editUser
 id edit_query
 id elastic
+id email
 id end
 id endToStart
 id enterAlways
@@ -1922,6 +1924,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firstname
 id fitToContents
 id fixed
 id flip
@@ -1965,6 +1968,7 @@ id jumpToStart
 id labelGroup
 id labeled
 id largeLabel
+id lastname
 id layout
 id left
 id leftToRight

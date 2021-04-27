@@ -23,4 +23,33 @@
         android:layout_height="wrap_content"
         android:text="Prendre une photo" />
 
+        <EditText
+            android:id="@+id/firstname"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:background="@android:color/holo_green_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/email"
+            android:background="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/editUser"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
 </LinearLayout>

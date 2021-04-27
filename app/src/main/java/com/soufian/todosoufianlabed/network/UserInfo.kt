@@ -15,4 +15,4 @@ data class UserInfo(
     val avatar: String ? = "https://goo.gl/gEgYUd"
 
 
-)
+): java.io.Serializable
